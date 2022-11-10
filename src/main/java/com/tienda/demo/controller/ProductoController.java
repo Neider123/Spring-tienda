@@ -13,4 +13,11 @@ public class ProductoController {
 	public String mostrar() {
 		return "productos/mostrarProductos";
 	}
+	
+	
+	//metodo para redireccionar a nueva vista crear prodctos
+	@GetMapping("/create")
+	public String create() {
+		return "productos/crearProductos";
+	}
 }
