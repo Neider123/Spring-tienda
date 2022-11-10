@@ -50,4 +50,10 @@ public class ProductoController {
 		productoService.save(producto);
 		return "redirect:/productos";
 	}
+	
+	@GetMapping("/categoria")
+	public String categoria() {
+		return "productos/categoria";
+	}
+	
 }

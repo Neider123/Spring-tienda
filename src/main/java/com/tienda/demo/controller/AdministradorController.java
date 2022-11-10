@@ -13,5 +13,7 @@ public class AdministradorController {
 	public String home() {
 		return "administrador/home";
 	}
+	
+
 
 }
