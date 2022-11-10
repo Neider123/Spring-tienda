@@ -27,6 +27,8 @@ public class Producto {
 	
 	@ManyToOne
 	private Usuario usuario;
+	
+	
 
 	public Producto(Integer id, String nombre, String descripcion, String imagen, double precio, int cantidad,
 			Usuario usuario) {
@@ -38,6 +40,28 @@ public class Producto {
 		this.precio = precio;
 		this.cantidad = cantidad;
 		this.usuario = usuario;
+	}
+	
+	
+
+
+
+	public Producto(Integer id, String nombre, String descripcion, String imagen, double precio, int cantidad) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.descripcion = descripcion;
+		this.imagen = imagen;
+		this.precio = precio;
+		this.cantidad = cantidad;
+	}
+
+
+
+
+
+	public Producto() {
+		super();
 	}
 	
 	

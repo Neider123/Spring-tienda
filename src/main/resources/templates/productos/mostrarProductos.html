@@ -56,14 +56,15 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td ></td>
-        <td ></td>
-        <td ></td>
-        <td ></td>
-        <td><a  class="btn btn-warning" href="">Editar</a> </td>
+    <!-- RECORRER UNA LISTA se crea una variable la cual recibe la informacion del backend -->
+      <tr th:each ="p:${productos}">
+      <td th:text = "${p.nombre}"></td>
+       <td th:text = "${p.descripcion}"></td>
+        <td th:text = "${p.cantidad}" ></td>
+         <td th:text = "${p.precio}" ></td>
+          <td><a  class="btn btn-warning" href="">Editar</a> </td>
         <td><a  class="btn btn-danger" href="">Eliminar</a> </td>
-      </tr>       
+      </tr>
     </tbody>
   </table>
 

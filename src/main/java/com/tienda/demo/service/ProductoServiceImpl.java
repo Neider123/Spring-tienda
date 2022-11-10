@@ -1,5 +1,6 @@
 package com.tienda.demo.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,6 +36,12 @@ public class ProductoServiceImpl implements ProductoService {
 	@Override
 	public void delete(Integer id) {
 	   productoRepository.deleteById(id);
+	}
+
+	@Override
+	//mostrar todos los productos
+	public List<Producto> mostrarTodo() {
+		return productoRepository.findAll();
 	}
 
 }
